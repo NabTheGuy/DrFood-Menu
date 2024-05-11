@@ -1,0 +1,1422 @@
+<html>
+  <head>
+    <title>Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+      @font-face {
+        font-family: "Dosis-Medium";
+        src: url(Dosis-Medium.ttf);
+      }
+      .glass {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+
+      body {
+        background-image: url(background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
+      .container {
+        max-width: 1500px;
+        margin: 150 auto 10px;
+        padding: 10px;
+        border-radius: 20px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 50px;
+        font-family: "Dosis-Medium", sans-serif, "Poppins";
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+        font-stretch: ultra-expanded;
+        letter-spacing: 60px;
+        text-transform: uppercase;
+        top: 120px;
+        position: relative;
+      }
+
+      #image-track {
+        display: flex;
+        gap: 3vmin;
+        position: absolute;
+        top: 39%;
+        transform: translate(0, -50%); 
+        user-select: none; 
+      }
+
+      #image-track > .image-container > .image1 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+      
+      #image-track > .image-container > .image2 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image3 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image4 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 70% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image5 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image6 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image7 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image8 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image9 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      #image-track > .image-container > .image10 {
+        width: 28vmin;
+        height: 40vmin;
+        object-fit: cover;
+        object-position: 50% center;
+        border-radius: 20px;
+        position: relative;
+      }
+      
+      #drfood{
+          width: 10%;
+          height: 25%;
+          position: relative;
+          z-index: 9999;
+          margin-top: 0px;
+          margin-left: -5px;
+        }
+
+        #madeby {
+          text-align: center;
+          font-size: 10px;
+          color: rgb(0, 0, 0);
+        }
+
+        #image-track > .image-container > .image-text > .price {
+          text-align: center;
+          margin: 10px;
+        }
+        
+        #image-track > .image-container > .image-text > .description {
+          text-align: center;
+        }
+      @media screen and (max-width: 320px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 395px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 15px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 100vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+      }
+
+      @media screen and (min-width: 360px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 475px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 105vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+      
+      }
+
+      @media screen and (min-width: 360px) and (max-height: 640px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 370px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+      
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 80vmin;
+          margin-top: 110px;
+          position: relative;
+        }
+      }
+
+      @media screen and (min-width: 375px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 405px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+      
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 85vmin;
+          margin-top: 122px;
+          position: relative;
+        }
+      }
+
+      @media screen and (min-width: 390px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 580px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+      
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 125vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+      }
+
+      @media screen and (min-width: 412px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 660px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 140vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+      
+      }
+
+      @media (min-width: 412px) and (max-height: 720px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 450px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 90vmin;
+          margin-top: 120px;
+          position: relative;
+        }
+      
+      }
+
+      @media screen and (min-width: 414px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 630px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 130vmin;
+          margin-top: 160px;
+          position: relative;
+        }
+      
+      }
+
+      @media screen and (min-width: 430px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 670px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 134vmin;
+          margin-top: 166px;
+          position: relative;
+        }
+      
+      }
+
+   @media screen and (min-width: 700px) {
+        #drfood{
+          width: 140px;
+          height: 140px;
+          position: relative;
+          z-index: 9999;
+          margin-top: -20px;
+          margin-left: -5px;
+          margin-bottom: 10px;
+        }
+
+        .container {
+          height: 660px;
+        }
+        h1 {
+          margin-top: -140px;
+          margin-left: 50px;
+          padding: 0%;
+          font-size: 40px;
+        }
+        #image-track > .image-container > .image1 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image2 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image3 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image4 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image5 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image6 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image7 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image8 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image9 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+
+        #image-track > .image-container > .image10 {
+          width: 80vmin;
+          height: 75vmin;
+          margin-top: 170px;
+          position: relative;
+        }
+      
+      }
+    </style>
+  </head>
+  <body>
+    <center><img id="drfood" src="drfood.png"></center>
+    <center><h1>menu</h1></center>
+    <div class="container glass">
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <div class="image-container">
+          <img class="image1" src="mansaf2.png" draggable="false" />
+          <div class="image-text">
+            <p class="price"> Mansaf - 15 AED</p>
+            <p class="description">Authentic Jordanian Mansaf.<br>Made to put you in the hospital.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image2" src="msakhan.jpg" draggable="false" />
+          <div class="image-text">
+            <p class="price">Msakhan Rolls - 5 AED for 2 Pieces</p>
+            <p class="description">From the hands of a Gazanian.<br>You cant get enough of it.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image3" src="noodles.jpg" draggable="false" />
+          <div class="image-text">
+            <p class="price">Noodles - 5 AED</p>
+            <p class="description">Long wheat strings with a bit of spice that puts a smile on you.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image4" src="zp.jpg" draggable="false" />
+          <div class="image-text">
+            <p class="price">Zinger Paratha - 10 AED</p>
+            <p class="description">Crispy & Delicous Zinger Paratha's made from real Pakistani hands.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image5" src="kinza.png" draggable="false" />
+          <div class="image-text">
+            <p class="price">Kinza - 2.50 AED</p>
+            <p class="description">A cold and refreshing drink with your food that isn't boycotted.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image6" src="pop.png" draggable="false" />
+          <div class="image-text">
+            <p class="price">Salted Popcorn - 3 AED</p>
+            <p class="description">Quick crunchy popped corn kernels to snack on.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image7" src="cpop.png" draggable="false" />
+          <div class="image-text">
+            <p class="price">Cheese Popcorn - 5 AED</p>
+            <p class="description">Quick crunchy & cheesy popped corn kernels to snack on.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image8" src="cotton.png" draggable="false" />
+          <div class="image-text">
+            <p class="price">Cotton Candy - 5 AED</p>
+            <p class="description">Sweet & fluffy sugar strings that are put into shapes for your sweet tooth.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image9" src="pac.jpg" draggable="false" />
+          <div class="image-text">
+            <p class="price">Pacman - 3 AED for 3 Rounds</p>
+            <p class="description">Bored while waiting on your food? Play Pacman!</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="image10" src="bd.jpg" draggable="false" />
+          <div class="image-text">
+            <p class="price">Blood Donation - 3 AED</p>
+            <p class="description">Craving sweet blood? Try our new Bloody Drink!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+          if (window.innerWidth <= 600) {
+            const track = document.getElementById("image-track");
+
+            const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+            const handleOnUp = () => {
+              track.dataset.mouseDownAt = "0";
+              track.dataset.prevPercentage = track.dataset.percentage;
+            }
+
+            const handleOnMove = e => {
+              if(track.dataset.mouseDownAt === "0") return;
+              
+              const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+                    maxDelta = window.innerWidth * 2;
+
+              const percentage = (mouseDelta / maxDelta) * -80,
+              nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+              nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -89.2);
+              
+              track.dataset.percentage = nextPercentage;
+              
+              track.animate({
+                transform: `translate(${nextPercentage}%, -50%)`
+              }, { duration: 1200, fill: "forwards" });
+              
+              for(const image of track.getElementsByClassName("image1")) {
+                image.animate({
+                  objectPosition: `${50 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image2")) {
+                image.animate({
+                  objectPosition: `${50 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image3")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image4")) {
+                image.animate({
+                  objectPosition: `${70 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image5")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image6")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image7")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image8")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image9")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image10")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+            }
+
+            /* -- Had to add extra lines for touch events -- */
+
+            window.onmousedown = e => handleOnDown(e);
+
+            window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+            window.onmouseup = e => handleOnUp(e);
+
+            window.ontouchend = e => handleOnUp(e.touches[0]);
+
+            window.onmousemove = e => handleOnMove(e);
+
+            window.ontouchmove = e => handleOnMove(e.touches[0]);
+          }
+          else if (window.innerWidth >= 500) {
+            const track = document.getElementById("image-track");
+
+            const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+            const handleOnUp = () => {
+              track.dataset.mouseDownAt = "0";
+              track.dataset.prevPercentage = track.dataset.percentage;
+            }
+
+            const handleOnMove = e => {
+              if(track.dataset.mouseDownAt === "0") return;
+              
+              const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+                    maxDelta = window.innerWidth * 2;
+
+              const percentage = (mouseDelta / maxDelta) * -80,
+              nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+              nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -88.5);
+              
+              track.dataset.percentage = nextPercentage;
+              
+              track.animate({
+                transform: `translate(${nextPercentage}%, -50%)`
+              }, { duration: 1200, fill: "forwards" });
+              
+              for(const image of track.getElementsByClassName("image1")) {
+                image.animate({
+                  objectPosition: `${50 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image2")) {
+                image.animate({
+                  objectPosition: `${50 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image3")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image4")) {
+                image.animate({
+                  objectPosition: `${70 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image5")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image6")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image7")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image8")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image9")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+
+              for(const image of track.getElementsByClassName("image10")) {
+                image.animate({
+                  objectPosition: `${95 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+            }
+
+            /* -- Had to add extra lines for touch events -- */
+
+            window.onmousedown = e => handleOnDown(e);
+
+            window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+            window.onmouseup = e => handleOnUp(e);
+
+            window.ontouchend = e => handleOnUp(e.touches[0]);
+
+            window.onmousemove = e => handleOnMove(e);
+
+            window.ontouchmove = e => handleOnMove(e.touches[0]);
+          }
+          else {
+            const track = document.getElementById("image-track");
+
+            const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+            const handleOnUp = () => {
+              track.dataset.mouseDownAt = "0";
+              track.dataset.prevPercentage = track.dataset.percentage;
+            }
+
+            const handleOnMove = e => {
+              if(track.dataset.mouseDownAt === "0") return;
+              
+              const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+                    maxDelta = window.innerWidth;
+
+              const percentage = (mouseDelta / maxDelta) * -100,
+              nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+              nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -44);
+              
+              track.dataset.percentage = nextPercentage;
+              
+              track.animate({
+                transform: `translate(${nextPercentage}%, -50%)`
+              }, { duration: 1200, fill: "forwards" });
+              
+              for(const image of track.getElementsByClassName("image")) {
+                image.animate({
+                  objectPosition: `${50 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+              }
+            }
+
+            /* -- Had to add extra lines for touch events -- */
+
+            window.onmousedown = e => handleOnDown(e);
+
+            window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+            window.onmouseup = e => handleOnUp(e);
+
+            window.ontouchend = e => handleOnUp(e.touches[0]);
+
+            window.onmousemove = e => handleOnMove(e);
+
+            window.ontouchmove = e => handleOnMove(e.touches[0]);
+          }
+    </script>
+    <p id="madeby">Made By Nabil Amjed, Samir Rami, Mohammed Hamza, Usaid Jarwar and Adam Abunabhan</p>
+  </body>
+</html>
